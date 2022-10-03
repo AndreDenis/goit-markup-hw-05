@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/modern-normalize.css">
+    <!-- <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> -->
     <!--Custom styles-->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -121,25 +122,21 @@
                 <li>
                     <div class="img-thumb">
                         <img class="img" src="./images/doing/img.jpg" alt="Чим ми займаємось" width="370" height="294">
-                        <div class="overlay-img">
-                            <p class="overlay-text">Десктопні додатки</p>
-                        </div>
+                        <p class="overlay-text">Десктопні додатки</p>
+
                     </div>
                 </li>
                 <li>
                     <div class="img-thumb">
                         <img class="img" src="./images/doing/img-2.jpg" alt="Чим ми займаємось" width="370" height="294">
-                        <div class="overlay-img">
-                            <p class="overlay-text">Мобільні додатки</p>
-                        </div>
+                        <p class="overlay-text">Мобільні додатки</p>
+
                     </div>
                 </li>
                 <li>
                     <div class="img-thumb">
                         <img class="img" src="./images/doing/img-3.jpg" alt="Чим ми займаємось" width="370" height="294">
-                        <div class="overlay-img">
-                            <p class="overlay-text">Дизайнерські рішення</p>
-                        </div>
+                        <p class="overlay-text">Дизайнерські рішення</p>
                     </div>
                 </li>
             </ul>
@@ -495,7 +492,16 @@
               </a>
               </li>
         </div>
+        <div class="subcribe-footer">
+            <p>Підпишіться на розсилку</p>
+            <div>
+                <input type="text" name="" placeholder="E-mail">
+                <button type="button">Підписатися</button>
+            </div>
+
         </div>
+        </div>
+        
         
     </footer>
 
@@ -507,6 +513,47 @@
                     <use href="./images/icons.svg#vector_2"></use>
                 </svg>
             </button>
+            <form name="register-form">
+                <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+                <div class="register-form-group" role="group">
+                    <label>
+                        <span>Ім'я</span>
+                        <input type="text" name="">
+                        <svg class="" width="18" height="18">
+                            <use href=""></use>
+                        </svg>
+                    </label>
+                    <label>
+                        <span>Телефон</span>
+                        <input type="tel" name="">
+                        <svg class="" width="18" height="18">
+                            <use href=""></use>
+                        </svg>
+                    </label>
+                    <label>
+                        <span>Пошта</span>
+                        <input type="email" name="">
+                        <svg class="" width="18" height="18">
+                            <use href=""></use>
+                        </svg>
+                    </label>
+
+                    <label>
+                        <textarea name=""rows="5" placeholder="Введіть текст"></textarea>
+                    </label>
+                </div>
+
+                <label>
+                    <input type="checkbox" name="" id="">
+                    <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+                </label>
+                <button type="submit">Відправити</button>
+
+            </form>
+        </div> 
+    </div>
+        
     <script src="./js/modal.js"></script>
 </body>
 
